@@ -1,0 +1,83 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(246, 248, 250);
+        }
+
+        hr {
+            height: 2px;
+            width: 20%;
+            border-width: 0;
+            background-color: rgb(17, 16, 16);
+            top: 474.5px;
+            left: 220px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        .bounce {
+            background-color: rgb(246, 248, 250);
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .ball {
+            background-color: red;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 100px;
+            left: 220px;
+            position: relative;
+            animation: velocity 1.4s infinite;
+        }
+
+        @keyframes velocity {
+            10% {
+                height: 50px;
+                width: 50px;
+            }
+
+            30% {
+                height: 50px;
+                width: 50px;
+            }
+
+            50% {
+                height: 30px;
+                width: 57px;
+                transform: translateY(240px);
+            }
+
+            75% {
+                height: 50px;
+                width: 50px;
+            }
+
+            100% {
+                transform: translateY(0px);
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bounce">
+        <div class="ball"> </div>
+    </div>
+    <hr>
+</body>
+
+</html>
